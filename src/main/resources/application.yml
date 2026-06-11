@@ -1,9 +1,9 @@
 server:
-  port:8090
+  port: 8090
 
 eureka:
   client:
-    registerWithEureka:false
-    fetchRegistry:false
+    registerWithEureka: false
+    fetchRegistry: false
   server:
-    waitTimeInMsWhenSyncEmpty:0
+    waitTimeInMsWhenSyncEmpty: 0
