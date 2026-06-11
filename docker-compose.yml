@@ -1,8 +1,13 @@
 version: '3.8'
 services:
   eureka-server:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    build: .
+    container_name: eureka-server
     ports:
       - "8090:8090"
+    networks:
+      - libmark-network
+
+networks:
+  libmark-network:
+    external: true
